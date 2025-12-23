@@ -83,7 +83,7 @@ def adicionar_registro(
     FEZ_TREINAMENTO,
     DATA_TREINAMENTO
 ):
-    supabase.table("EXCESSO VELOCIDADE - FROTA").insert({
+    supabase.table("EXCESSO VELOCIDADE - AGREGADO").insert({
         "OPERACAO": OPERACAO,
         "AGREGADO": AGREGADO,
         "MATRICULA": MATRICULA,
@@ -143,7 +143,7 @@ def atualizar_registro_por_placa(
     FEZ_TREINAMENTO,
     DATA_TREINAMENTO
 ):
-    supabase.table("EXCESSO VELOCIDADE - FROTA").update({
+    supabase.table("EXCESSO VELOCIDADE - AGREGADO").update({
         "OPERACAO": OPERACAO,
         "AGREGADO": AGREGADO,
         "MATRICULA": MATRICULA,
